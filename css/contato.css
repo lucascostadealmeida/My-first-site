@@ -1,0 +1,244 @@
+/* margin e o padding
+   margin - o espaço fora do objeto
+   padding - o espaço dentro do objeto
+ */
+ 
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	font: 15px Playfair+Display;
+ 	font-weight: 600;
+ }  
+
+/* formatar o header */
+header {
+	background: rgba(0,0,0, 0.3); /* cor do fundo */
+	padding: 10px 20px ; /* margem interna*/
+	position: fixed; /* fixar o topo */
+	width: 100%; /* largura */
+	z-index: 9999;
+	box-sizing: border-box;
+}
+
+/* figure - banner */
+figure {
+	background-color: #000;
+	width: 100%;
+
+}
+
+figure .frase{
+	color: #FFF;
+	text-align: center;
+	font-size: 36px;
+	position: absolute;
+	width: 100%;
+	margin-top: -200px;
+}
+
+figure img {
+	opacity: 0.7;
+	display: block;
+}
+
+.container{
+	width: 100%;
+	margin: auto;
+
+}
+
+main{
+	width: 100%;
+	float: left;
+	display: grid;
+	grid-template-columns: 100%;
+	box-shadow: 0 0 20px black;
+	border-radius: 10px;
+}
+
+article{
+	background: white;
+
+}
+
+article h2{
+	margin: 10px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 20px #FF0000;
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+
+
+}
+form{
+	text-align: center;
+	margin: 0 auto;
+	width: 100px;
+	display: block;
+
+
+}
+button{
+	text-align: center;
+	margin: 0 auto;
+	width: 100px;
+	color: green;
+}
+
+label{
+  	width: 90px;
+  	text-align: center;
+  	display: inline-block;
+}
+
+article h1 p, li{
+	text-align: left;
+}
+
+
+main article h1{
+	background-color: white;
+}
+
+article img{
+	border-radius: 10px 10px 0 0;
+}
+
+article iframe{
+	width: 100%;
+}
+
+article img, figure img{
+	width: 100%;
+}
+
+aside {
+	width: 250px;
+	float: right;
+	background-color: #f1f1f1;
+}
+
+.asidetext{
+	text-decoration: none;
+	color: blue;
+}
+
+aside, ul, aside li{
+	margin-left: 40px;
+}
+
+aside h2{
+	margin: 10px;
+}
+
+article h2, article p{
+	margin: 10px;
+	text-align: justify;
+}
+
+article h2{
+	text-align: center;
+	font-weight: 900;
+	text-decoration: underline;
+	text-decoration-color: #a90329;
+
+
+}
+
+/* rodape */
+footer{
+	background-color: #333;
+	color: #FFF;
+	padding: 10px;
+	color: red;
+	color: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%);
+	color: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+	color: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+	color: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
+
+}
+footer p{
+	text-align: right;
+	background-color: #333;
+
+}
+
+
+footer article h3, footer a{
+	text-align: left;
+	padding: 10px;
+	background-color: #333;
+	text-decoration: underline;
+
+
+}
+
+footer a{
+	color: white;
+	text-align: left;
+	background-color: #333;
+	text-decoration: underline;
+}
+
+footer article ul, footer  a{	
+	column-count: 2;
+	display: list-item;
+	list-style: none;
+	background-color: #333;
+}
+
+
+footer article,footer  a{
+	background-color: #333;
+
+}
+
+footer article p{
+	color: white;
+	text-align: left;
+	background-color: #333;
+	text-decoration: none;
+
+}
+
+
+.clearfix{
+	clear: both;
+}
+
+header nav{
+	float: right; /* colocar o menu na direita do site */
+	padding: 20px 30px;
+}
+
+header nav ul li{
+	list-style: none;
+	display: inline;
+	margin: 10px;
+}
+
+header nav ul li a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+header nav ul li a:hover{
+	color: #a90329;
+	color: -moz-linear-gradient(top,  #a90329 0%, #8f0222 44%, #6d0019 100%);
+	color: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+	color: linear-gradient(to bottom,  #a90329 0%,#8f0222 44%,#6d0019 100%);
+	color: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
+
+}
+
+#menu {
+	color: #FFF;
+	border: 1px solid #FFF;
+	padding: 10px;
+	float: right;
+	margin: 10px 30px;
+	display: none;
+}
